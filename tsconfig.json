@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src", 
+        "outDir": "./lib", 
+        "module": "commonjs", 
+        "target": "es5", 
+        "experimentalDecorators": true,
+        "declaration": true, 
+        "jsx": "react"
+    },
+    "exclude": [
+        "lib", 
+        "__tests__",
+        "node_modules"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "stickyants-mobx-forms",
+  "version": "1.0.0",
+  "description": "A set of reusable React UI components using mobx ",
+  "main": "index.js",
+  "repository": "https://github.com/suhdev/stickyants-mobx-forms.git",
+  "author": "Suhail Abood <suhail.abood@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "pretest": "tslint --project tslint.json --fix",
+    "test":"jest __tests__",
+    "prepublish": "npm test"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/react": "^16.7.21",
+    "@types/react-dom": "^16.0.11",
+    "jest": "^24.0.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
