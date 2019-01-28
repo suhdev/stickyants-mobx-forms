@@ -1,4 +1,5 @@
 import * as React from 'react'; 
+
 const WindowContext = React.createContext<WindowSize>({
     innerWidth:window.innerWidth, 
     innerHeight:window.innerHeight,
