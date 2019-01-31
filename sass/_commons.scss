@@ -1,0 +1,62 @@
+$sa-formfield-control-padding-y:5px !default; 
+$sa-formfield-control-padding-x:10px !default;
+$sa-formfield-flags:borderless; 
+
+
+/**
+ * Ensures that all field elements will have box-sizing 
+ * set to border-box 
+ */
+*[class^="sa-formfield"]{
+    box-sizing: border-box;
+}
+
+.sa-formfield {
+    font-size:$sa-base-font-size;
+    /**
+     * The basic style applied to .sa-formfield__control 
+     */
+    &__control {
+        outline:none;
+        display:block; 
+        width:100%;
+    }
+
+    /**
+     * The basic padding applied to the component. 
+     * The class should be applied to the element in 
+     * the field tree that needs to receive the padding 
+     * i.e. allocate space on screen 
+     */ 
+    &__padding{
+        padding-top:$sa-formfield-control-padding-y;
+        padding-bottom:$sa-formfield-control-padding-y;
+        padding-left:$sa-formfield-control-padding-x;
+        padding-right:$sa-formfield-control-padding-x; 
+    }
+
+    &__label {
+        text-transform: uppercase; 
+        font-weight: bold; 
+    }
+
+    &[data-borderless="true"]{
+        .sa-formfield__control {
+            border:none; 
+        }
+    }
+
+    /**
+     * Field size modifiers
+     */
+    @each $size in $sa-sizes {
+        &--#{$size}{
+            $idx:index($list: $sa-sizes, $value: $size);
+            font-size:$sa-base-font-size * nth($list: $sa-sizes-multipliers, $n: $idx);
+        }
+    }
+
+    &[data-visible="false"]{
+        display:none; 
+    }
+}

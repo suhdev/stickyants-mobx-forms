@@ -1,0 +1,50 @@
+// General variables
+
+// Supported component sizes 
+$sa-sizes:xs sm md lg xl !default; 
+// Component size multipliers 
+$sa-sizes-multipliers:0.6 0.8 1 1.5 2 !default;
+// Base font size -> md size 
+$sa-base-font-size:15px !default; 
+// Screen sizes
+$sa-screen-breakpoints:320px 720px 920px 1280px 1400px; 
+
+// Color Palette 
+
+$sa-color-white:#fff !default;
+$sa-color-black:#333 !default;
+
+$sa-color-1:#565656 !default; 
+$sa-color-2:#3867d6 !default;
+$sa-color-3:#4b7bec !default; 
+$sa-color-4:#45aaf2 !default; 
+$sa-color-5:#2d98da !default; 
+$sa-color-6:#eb3b5a !default; 
+$sa-color-7:#fc5c65 !default;
+$sa-color-8:#20bf6b !default;
+$sa-color-9:#26de81 !default; 
+$sa-color-10:#0fb9b1 !default;
+$sa-color-11:#2bcbba !default; 
+$sa-color-12:#f7b731 !default;
+$sa-color-13:#fed330 !default; 
+$sa-color-12:#fa8231 !default;
+$sa-color-13:#fd9644 !default; 
+$sa-color-12:#4b6584 !default;
+$sa-color-13:#778ca3 !default; 
+$sa-color-12:#a5b1c2 !default;
+$sa-color-13:#d1d8e0 !default; 
+$sa-color-12:#8854d0 !default;
+$sa-color-13:#a55eea !default; 
+
+$sa-text-color:$sa-color-1;
+$sa-color-primary:$sa-color-2; 
+$sa-color-primary-alt:$sa-color-3;
+$sa-color-danger:$sa-color-6; 
+$sa-color-danger-alt:$sa-color-7; 
+$sa-color-warning:$sa-color-12; 
+$sa-color-warning-alt:$sa-color-13; 
+$sa-color-success:$sa-color-8; 
+$sa-color-success-alt:$sa-color-9; 
+
+
+

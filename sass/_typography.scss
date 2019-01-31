@@ -1,0 +1,23 @@
+$sa-text-transform-modifiers:inherit uppercase lowercase capitalize unset none;
+$sa-text-decoration-modifiers:normal underline oblique inherit none; 
+$sa-text-align-modifiers:left right center;
+
+.sa-text {
+    @each $m in $sa-text-transform-modifiers {
+        &--#{$m}{
+            text-transform: $m;
+        }
+    }
+    
+    @each $m in $sa-text-decoration-modifiers {
+        &--#{$m}{
+            text-decoration: $m;
+        }
+    }
+    
+    @each $m in $sa-text-align-modifiers {
+        &--#{$m}{
+            text-align: $m;
+        }
+    }
+}
